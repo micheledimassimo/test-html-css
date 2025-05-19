@@ -1,0 +1,105 @@
+/*
+RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: aliceblue;
+}
+/*
+General
+*/
+.my-pt {
+    padding-top: 50px;
+}
+.my-mt {
+    margin-top: 50px;
+}
+
+.my-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.my-container > h1 {
+    padding: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.my-col-3 {
+    width: calc((100% / 4) - 10px);
+    
+}
+
+
+.card{
+    box-shadow: 0 0 5px rgba(14, 14, 14, 0.2); 
+    transition: box-shadow .3s;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.card:hover{
+    box-shadow: 0 0 5px rgba(1, 75, 249, 0.5); 
+    transition: box-shadow .3s;
+    
+}
+
+.card > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(14, 14, 14, 0.2); 
+    transition: box-shadow .3s;
+    object-fit: scale-down;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.card > .card-body{
+    padding-top: 80px;
+}
+
+.card > .card-body > p {
+    opacity: 0.8;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    margin: 20px 0;
+}
+
+.card > .card-body > button {
+    border-radius: 5px;
+    background-color: lightcoral;
+}
+
+.card > .card-body > button:hover {
+    
+    background-color: aqua;
+}
+
+.card > .card-body > button > a {
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    color: black;
+    padding: 30px;
+    line-height: 20px;
+}
