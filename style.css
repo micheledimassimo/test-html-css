@@ -35,13 +35,12 @@ General
 .my-row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
     padding: 10px;
 }
 
 .my-col-3 {
     width: calc((100% / 4) - 10px);
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     margin-right: 10px;
 }
 
@@ -78,13 +77,18 @@ General
     background-color: white;
 }
 
+.card >img:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); 
+    transition: box-shadow .3s;
+}
+
 .card > .card-body{
     padding-top: 80px;
 }
 
 .card > .card-body > p {
     opacity: 0.8;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin: 20px 0;
 }
 
